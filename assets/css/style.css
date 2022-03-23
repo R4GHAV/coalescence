@@ -22,6 +22,10 @@ body {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -506,8 +510,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-  
 }
 
 @media (max-width: 800px) {
@@ -610,14 +612,15 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.speaker_head {
+.speaker_head,.merch_head {
   margin: 50px 0;
   font-size: 45px;
   letter-spacing: 1mm;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.speaker_head:after {
+.speaker_head:after, .merch_head:after {
   content: "";
   display: block;
   width: 80px;
@@ -651,7 +654,6 @@ input[type="number"] {
     color: #3c3c3c;
   }
 }
-
 
 /* FAQ */
 
@@ -813,7 +815,6 @@ input[type="number"] {
   background-size: 100% 100px;
   background-repeat: no-repeat;
   background-position: center;
-  transition: visibility 0.6s linear, opacity 0.3s linear;
 }
 
 .team_member_name img {
@@ -833,16 +834,36 @@ input[type="number"] {
   font-weight: 300;
 }
 
+.out_more {
+  display: none;
+}
+
+.more_team {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+  flex-direction: row;
+  background-image: url("../images/team_purple_bg.png");
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: display 0.6s linear, opacity 0.3s linear;
+}
+
+.more_name {
+  margin: 20px;
+  color: rgb(65, 65, 65);
+  font-size: 17px;
+}
+
+.more_name:hover {
+  text-decoration: underline;
+}
+
 .team_member_img:hover img {
   transform: scale(1.2);
 }
 
-@media (max-width: 800px) {
-  .team_member {
-    width: 100%;
-    margin: 10px 8px;
-  }
-}
 
 @media (max-width: 1024px) {
   .team_member {
@@ -855,6 +876,33 @@ input[type="number"] {
   .team_member {
     width: 32%;
     margin: 30px 5px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .team_member {
+    width: 40%;
+    margin: 10px 8px;
+  }
+
+  .member_name {
+    padding-top: 4px;
+    font-size: 12px;
+  }
+
+  .member_post {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .more_team {
+    flex-direction: column;
+    background-size: 100% 12000px;
+
+  }
+  .more_name {
+    margin: 10px;
   }
 }
 
@@ -871,4 +919,44 @@ input[type="number"] {
   background-size: 100% 100px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.merch {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.mySlides {
+  display: none;
+  margin: 30px auto;
+}
+.mySlides img {vertical-align: middle;}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
