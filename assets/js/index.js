@@ -44,7 +44,7 @@ function incNbrRec(i, endNbr, elt, speed) {
       if (endNbr < 1000) {
         incNbrRec(i + 1, endNbr, elt, speed);
       } else {
-        incNbrRec(i + 5, endNbr, elt, speed);
+        incNbrRec(i + 15, endNbr, elt, speed);
       }
     }, speed);
   }
@@ -107,10 +107,10 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active_color", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active_color";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
