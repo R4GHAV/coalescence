@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700"
+      rel="stylesheet"
+    />
+    <title>Coalescence</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet" />
-  <title>Coalescence</title>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/nav.css">
-</head>
+  <body>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="flex-1">
+        <img src="assets/images/cel_logo.png" alt="" />
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
-<body>
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="flex-1">
-      <img src="assets/images/cel_logo.png" alt="" />
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-
-    <div class="nav-links flex-3">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#events">Events</a>
-      <a href="#speakers">Speakers</a>
-      <a href="#faq">F.a.q.</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-
-  <div class="main">
-    <div class="background">
-      <img class="bgimg" src="assets/images/backgroung.png" alt="" />
-      <div class="register_section">
-        <img class="event_head" src="assets/images/Cel22.png" alt="" />
-        <p class="i3">Inspire . Ideate . Innovate</p>
-        <p class="reg_btn pointer">Register</p>
+      <div class="nav-links flex-3">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#faq">F.a.q.</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
 
-    <!-- about us  -->
-    <div class="about_section">
-      <div class="flex">
-        <div class="about_img">
+    <div id="home" class="main">
+      <div class="background">
+        <img class="bgimg" src="assets/images/backgroung.png" alt="" />
+        <div class="register_section">
+          <img class="event_head" src="assets/images/Cel22.png" alt="" />
+          <p class="i3">Inspire . Ideate . Innovate</p>
+          <p class="reg_btn pointer">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfegvawOedNhZEISAtgqkM-fefdC7AWcwp0SxVn2XDHQydyLA/viewform?usp=sf_link"
+              target="blank"
+              >Register</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- about us  -->
+      <div id="about" class="about_section">
+        <div class="flex">
+          <div class="about_img">
+            <img alt="hero" src="assets/images/aboutUs.png" />
+          </div>
+          <div class="about_text">
+            <h1>
+              "Everyone can see the risk, but only an entrepreneur can see the
+              reward.”
+            </h1>
+            <p>
+              Coalescence is BITS Goa's flagship entrepreneurial summit. It aims
+              at providing a platform for individuals with creative ideas and
+              future think tanks, by enabling efficient interaction through
+              informative speaker conferences and stalwart panel discussions.
+              The event attracts major CxO's, budding entrepreneurs , business
+              leaders, industry veterans and venture capitalists across India.
+            </p>
+            <p>
+              We allow an influx of global leaders and facilitate the
+              amalgamation of thought and effort in the entrepreneurial spirit.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="about_section_mobile">
+        <div class="about_imgm flex-center-all">
           <img alt="hero" src="assets/images/aboutUs.png" />
         </div>
-        <div class="about_text">
+        <div class="about_textm">
           <h1>
             "Everyone can tell you the risk, but only an entrepreneur can see
             the reward”
@@ -69,460 +106,448 @@
             Coalescence is BITS Goa's flagship entrepreneurial summit. It aims
             at providing a platform for individuals with creative ideas and
             future think tanks, by enabling efficient interaction through
-            informative speaker conferences and stalwart panel discussions.
-            The event attracts major CxO's, budding entrepreneurs , business
+            informative speaker conferences and stalwart panel discussions. The
+            event attracts major CxO's, budding entrepreneurs , business
             leaders, industry veterans and venture capitalists across India
           </p>
           <p>
-            In Coalescence, we see an opportunity, a way to achieve what we
-            aim to. To allow an influx of global leaders and facilitate the
+            In Coalescence, we see an opportunity, a way to achieve what we aim
+            to. To allow an influx of global leaders and facilitate the
             amalgamation of thought and effort in the entrepreneurial spirit.
           </p>
         </div>
       </div>
-      <hr />
-    </div>
 
-    <div class="about_section_mobile">
-      <div class="about_imgm flex-center-all">
-        <img alt="hero" src="assets/images/aboutUs.png" />
-      </div>
-      <div class="about_textm">
-        <h1>
-          "Everyone can tell you the risk, but only an entrepreneur can see
-          the reward”
-        </h1>
-        <p>
-          Coalescence is BITS Goa's flagship entrepreneurial summit. It aims
-          at providing a platform for individuals with creative ideas and
-          future think tanks, by enabling efficient interaction through
-          informative speaker conferences and stalwart panel discussions.
-          The event attracts major CxO's, budding entrepreneurs , business
-          leaders, industry veterans and venture capitalists across India
-        </p>
-        <p>
-          In Coalescence, we see an opportunity, a way to achieve what we
-          aim to. To allow an influx of global leaders and facilitate the
-          amalgamation of thought and effort in the entrepreneurial spirit.
-        </p>
-      </div>
-    </div>
+      <!-- plan section  -->
 
-    <!-- plan section  -->
+      <div class="plan_section_mobile">
+        <img src="assets/images/purple_bg_move34.png" alt="" />
+      </div>
 
-    <div class="plan_section_mobile">
-      <img src="assets/images/purple_bg_move34.png" alt="">
-    </div>
-
-    <div class="plan_section">
-      <div class="spacer s2"></div>
-      <div class="spacer s0" id="trigger"></div>
-      <div id="imagesequence">
-        <img id="myimg" src="assets/images/purple_bg_move30.png" />
-      </div>
-      <div class="spacer s2"></div>
-    </div>
-
-    <!-- stats section -->
-    <div id="stats" class="stats flex-center-all">
-      <div class="stat flex-center-all flex-vertical">
-        <img class="stat_img" src="assets/images/participants.png" alt="" />
-        <p id="3600" class="stat_num">0</p>
-        <p class="stat_text">PARTICIPANTS</p>
-      </div>
-      <div class="stat flex-center-all flex-vertical">
-        <img class="stat_img" src="assets/images/dart.png" alt="" />
-        <p id="340" class="stat_num">0</p>
-        <p class="stat_text">STARTUPS</p>
-      </div>
-      <div class="stat flex-center-all flex-vertical">
-        <img class="stat_img" src="assets/images/megaphone.png" alt="" />
-        <p id="45" class="stat_num">0</p>
-        <p class="stat_text">SPEAKERS</p>
-      </div>
-      <div class="stat flex-center-all flex-vertical">
-        <img class="stat_img" src="assets/images/user.png" alt="" />
-        <p id="120" class="stat_num">0</p>
-        <p class="stat_text">Professionals</p>
-      </div>
-    </div>
-    <img class="moon_btm" src="assets/images/moon_bottom.png" alt="" />
-
-    <!-- act section -->
-
-    <div class="act">
-      <div class="act_intro flex-center-all">
-        <img class="act_brdr" src="assets/images/act_circle.png" alt="" />
-        <img class="act_img" src="assets/images/ACT.png" alt="" />
-      </div>
-      <div class="act_intro flex-center-all">
-        <img class="act_text" src="assets/images/txt.png" alt="" />
-      </div>
-      <div class="text_act">
-        <h2>THE CONFERENCE</h2>
-        <p>
-          A good idea impresses, but a great one inspires. ACT brings to you
-          some of the greatest ideas that are sure to influence and inspire
-          the budding entrepreneur in you. ACT aims to unite the leaders with
-          the aspirants. The conference has always managed to bridge the gap
-          between the leaders of today and those of tomorrow. To inspire minds
-          to act, create, and transform, Coalescence features ACT.
-        </p>
-      </div>
-      <div class="act_images flex-center-all">
-        <img src="assets/images/actimg1.png" alt="" />
-        <img src="assets/images/actimg2.png" alt="" />
-        <img src="assets/images/actimg3.png" alt="" />
-      </div>
-    </div>
-
-    <!-- Event section -->
-    <div class="event_bg">
-      <div class="events flex flex-vertical">
-        <div class="event_head_images">
-          <img src="assets/images/spaceship.gif" alt="" class="event_spaceship">
-          <img class="event_rect" src="assets/images/event-rectangle.png" alt="" />
-          <img class="event_img" src="assets/images/EVENTS.png" alt="" />
+      <div class="plan_section">
+        <div class="spacer s2"></div>
+        <div class="spacer s0" id="trigger"></div>
+        <div id="imagesequence">
+          <img id="myimg" src="assets/images/purple_bg_move30.png" />
         </div>
-        <div class="event_gallery flex flex-vertical">
-          <div class="event_img_long">
-            <img src="assets/images/event26.png" alt="" />
+        <div class="spacer s2"></div>
+      </div>
+
+      <!-- stats section -->
+      <div id="stats" class="stats flex-center-all">
+        <div class="stat flex-center-all flex-vertical">
+          <img class="stat_img" src="assets/images/participants.png" alt="" />
+          <p id="3600" class="stat_num">0</p>
+          <p class="stat_text">PARTICIPANTS</p>
+        </div>
+        <div class="stat flex-center-all flex-vertical">
+          <img class="stat_img" src="assets/images/dart.png" alt="" />
+          <p id="340" class="stat_num">0</p>
+          <p class="stat_text">STARTUPS</p>
+        </div>
+        <div class="stat flex-center-all flex-vertical">
+          <img class="stat_img" src="assets/images/megaphone.png" alt="" />
+          <p id="45" class="stat_num">0</p>
+          <p class="stat_text">SPEAKERS</p>
+        </div>
+        <div class="stat flex-center-all flex-vertical">
+          <img class="stat_img" src="assets/images/user.png" alt="" />
+          <p id="120" class="stat_num">0</p>
+          <p class="stat_text">Professionals</p>
+        </div>
+      </div>
+      <img class="moon_btm" src="assets/images/moon_bottom.png" alt="" />
+
+      <!-- act section -->
+
+      <div class="act">
+        <div class="act_intro flex-center-all">
+          <img class="act_brdr" src="assets/images/act_circle.png" alt="" />
+          <img class="act_img" src="assets/images/ACT.png" alt="" />
+        </div>
+        <div class="act_intro flex-center-all">
+          <img class="act_text" src="assets/images/txt.png" alt="" />
+        </div>
+        <div class="text_act">
+          <h2>THE CONFERENCE</h2>
+          <p>
+            A good idea impresses, but a great one inspires. ACT brings to you
+            some of the greatest ideas that are sure to influence and inspire
+            the budding entrepreneur in you. ACT aims to unite the leaders with
+            the aspirants. The conference has always managed to bridge the gap
+            between the leaders of today and those of tomorrow. To inspire minds
+            to act, create, and transform, Coalescence features ACT.
+          </p>
+        </div>
+        <div class="act_images flex-center-all">
+          <img src="assets/images/actimg1.png" alt="" />
+          <img src="assets/images/actimg2.png" alt="" />
+          <img src="assets/images/actimg3.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Event section -->
+      <div id="events" class="event_bg">
+        <div class="events flex flex-vertical">
+          <div class="event_head_images">
+            <img
+              src="assets/images/spaceship.gif"
+              alt=""
+              class="event_spaceship"
+            />
+            <img
+              class="event_rect"
+              src="assets/images/event-rectangle.png"
+              alt=""
+            />
+            <img class="event_img" src="assets/images/EVENTS.png" alt="" />
           </div>
-          <div class="event_second_gallery flex">
-            <div class="event_5_img flex flex-vertical">
-              <div class="evnt_2_img flex">
-                <img class="event27" src="assets/images/event27.png" alt="" />
-                <img class="event28" src="assets/images/event28.png" alt="" />
+          <div class="event_gallery flex flex-vertical">
+            <div class="event_img_long">
+              <img src="assets/images/event26.png" alt="" />
+            </div>
+            <div class="event_second_gallery flex">
+              <div class="event_5_img flex flex-vertical">
+                <div class="evnt_2_img flex">
+                  <img class="event27" src="assets/images/event27.png" alt="" />
+                  <img class="event28" src="assets/images/event28.png" alt="" />
+                </div>
+                <div class="event_3_img flex">
+                  <img src="assets/images/event30.png" alt="" class="event30" />
+                  <img src="assets/images/event31.png" alt="" class="event31" />
+                  <img src="assets/images/event32.png" alt="" class="event32" />
+                </div>
               </div>
-              <div class="event_3_img flex">
-                <img src="assets/images/event30.png" alt="" class="event30" />
-                <img src="assets/images/event31.png" alt="" class="event31" />
-                <img src="assets/images/event32.png" alt="" class="event32" />
+              <div class="img_event_long">
+                <img src="assets/images/event29.png" alt="" />
               </div>
             </div>
-            <div class="img_event_long">
-              <img src="assets/images/event29.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker section -->
+
+      <div id="speakers" class="speaker_section">
+        <p class="speaker_head">SPEAKERS</p>
+
+        <p class="coming_soon">
+          Coming soon
+          <span class="f1">.</span>
+          <span class="f2">. </span>
+          <span class="f3">. </span>
+        </p>
+      </div>
+
+      <!-- Sponsor Section -->
+
+      <div class="sponsors">
+        <p class="sponsor_head">Sponsors</p>
+        <div class="sponsor_img flex-wrap flex-center-all">
+          <img src="assets/images/gfg.png" height="300" width="300" alt="" />
+          <img src="assets/images/fyers.png" height="300" width="300" alt="" />
+          <img src="assets/images/sarcon.jpg" height="300" width="300" alt="" />
+        </div>
+        <!-- <div class="sponsor_img flex-wrap flex-center-all">
+        <img src="assets/images/isbr.jpg" height="300" width="300" alt="">
+        <img src="assets/images/questionpro.png" height="300" width="300" alt="">
+        <img src="assets/images/edcellence-logo.jpg" height="300" width="300" alt="">
+      </div> -->
+      </div>
+
+      <!-- FAQ Section -->
+
+      <div id="faq" class="faq">
+        <div class="global-label">
+          <div class="global-label-text">F.A.Q.</div>
+        </div>
+        <!--1 question-->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">
+              Is there any fee to participate in Coalescence?
+            </div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              No, your registration will be completely free.
+            </div>
+          </div>
+        </div>
+        <!--2 question-->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">
+              Who has previously come to Coalescence as a speaker?
+            </div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Likes of Nikhil Kamath, Bhuvan Bam, Rajat Sharma and many others
+              have attended Coalescence as speakers. For more information -
+              <a href="#speakers">click here</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 question -->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">How long is Coalescence?</div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Coalescence will be hosted for a period of 3 days.
+            </div>
+          </div>
+        </div>
+        <!-- 4 question -->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">Who hosts Coalescence?</div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Coalescence is hosted by the Center for Entrepreneurial
+              Leadership(CEL) based in BITS-Pilani, KK Birla Goa Campus.
+            </div>
+          </div>
+        </div>
+        <!-- 6 question -->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">
+              What are the perks of attending the E-Summit?
+            </div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Apart from an awesome learning experience, you are in for some fun
+              activities and a chance to win goodies and certificates from CEL
+              BITS Goa.
+            </div>
+          </div>
+        </div>
+        <!-- 7 question -->
+        <div class="faq-container">
+          <div class="faq-label">
+            <div class="faq-label-text">
+              Is it necessary to participate in a competition to be part of the
+              summit?
+            </div>
+            <div class="faq-label-icon">
+              <span class="material-icons"> expand_more </span>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              No, you can attend talks, workshops, competitons etc. individually
+              as well.
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      <!-- team section -->
 
-    <!-- Speaker section -->
-
-    <div class="speaker_section">
-      <p class="speaker_head">SPEAKERS</p>
-
-      <p class="coming_soon">
-        Coming soon
-        <span class="f1">.</span>
-        <span class="f2">. </span>
-        <span class="f3">. </span>
-      </p>
-    </div>
-
-    <!-- FAQ Section -->
-
-    <div class='faq'>
-      <div class="global-label">
-        <div class="global-label-text">
-          F.A.Q.
-        </div>
-
-      </div>
-      <!--1 question-->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            What is UDGAM?
+      <div class="team_section">
+        <p class="team_head">TEAM</p>
+        <div class="team_members flex-center-all">
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Himanshu Singh 3.jpg"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Himanshu Singh</p>
+              <p class="member_post">President</p>
+            </div>
           </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Kumar Satyam 3.JPG"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Kumar Satyam</p>
+              <p class="member_post">Vice President</p>
+            </div>
           </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            UDGAM is the Annual Entrepreneurship Summit of IIT Guwahati, which is held to bring together the academic
-            community, new-age entrepreneurs, industry leaders, and investors on a common platform.
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Akshat Agrawal.png"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Akshat Agrawal</p>
+              <p class="member_post">Head of Operations and Partnerships</p>
+            </div>
           </div>
-
-        </div>
-      </div>
-      <!--2 question-->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            Would COVID restrictions affect my participation?
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/TVS Krishna Vardhan.jpg"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">TVS Krishna Vardhan</p>
+              <p class="member_post">Events Head</p>
+            </div>
           </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Praveen Kumar Singh.jpg"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Praveen Kumar Singh</p>
+              <p class="member_post">Design Head</p>
+            </div>
           </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            Don't worry we've got you covered. This edition of E-Summit is completely online and you can attend it from
-            any part of the world!
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Adya Tewari.jpg"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Adya Tewari</p>
+              <p class="member_post">CR Head</p>
+            </div>
           </div>
-
-        </div>
-      </div>
-      <!-- 3 question -->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            Is it necessary to participate in a competition to be part of the summit?
+          <div class="team_member">
+            <div class="team_member_img">
+              <img
+                src="assets/images/Ankit Anand.jpg"
+                height="260"
+                width="225"
+                alt=""
+                class="flex-1"
+              />
+            </div>
+            <div class="team_member_name">
+              <p class="member_name">Ankit Anand</p>
+              <p class="member_post">Marketing Head</p>
+            </div>
           </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
-          </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            No, we have separate passes for all those who want to attend speaker sessions, fun events, and workshops.
-          </div>
-
-        </div>
-      </div>
-      <!-- 4 question -->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            Who can participate in UDGAM?
-          </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
-          </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            Students, professionals, professors, or anyone wanting to learn about entrepreneurship and develop their
-            skills all can be a part of the summit.
-          </div>
-
-        </div>
-      </div>
-      <!-- 5 question -->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            Will we get recordings of keynotes and panel discussions?
-          </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
-          </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            Yes, If you have purchased the UDGAM pass and somehow miss the lecture, You’ll be provided with the
-            recordings post the event which you can access forever.
-          </div>
-
-        </div>
-      </div>
-      <!-- 6 question -->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            What are the perks of attending the E-Summit?
-          </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
-          </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            Apart from an awesome learning experience, you are in for some fun activities and a chance to win goodies
-            and certificates from E-Cell IIT Guwahati.
-          </div>
-
-        </div>
-      </div>
-      <!-- 7 question -->
-      <div class="faq-container">
-        <div class="faq-label">
-          <div class="faq-label-text">
-            How will I know if my registration is approved?
-          </div>
-          <div class="faq-label-icon">
-            <span class="material-icons">
-              expand_more
-            </span>
-          </div>
-
-        </div>
-        <div class="faq-answer ">
-          <div class="faq-answer-content">
-            You will receive a mail confirming your registration for Udgam. Make sure you purchased the correct pass. If
-            you don’t find the mail in your inbox please check your spambox.
-          </div>
-
         </div>
       </div>
 
+      <div class="merch">
+        <p class="merch_head">Merchandise</p>
 
-    </div>
+        <p class="">
+          Launching the 2022 edition of Coalescence merchandise! <br />
+          We bring to you a selection of products to choose from - Tshirts and Hoodie. Grab
+          your merchandise now!
+        </p>
 
-    <!-- team section -->
-
-    <div class="team_section">
-      <p class="team_head">TEAM</p>
-      <div class="team_members flex-center-all">
-        <div class="team_member">
-          <div class="team_member_img">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
+            src="assets/images/merch1.jpeg"
+            height="300"
+            />
           </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
+
+          <div class="mySlides fade">
+            <img
+            src="assets/images/merch2.jpeg"
+            height="300"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="assets/images/merch3.jpeg"
+            height="300"
+
+            />
           </div>
         </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
-        </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
-        </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
-        </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
-        </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
-        </div>
-        <div class="team_member">
-          <div class="team_member_img">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-              alt="" class="flex-1" />
-          </div>
-          <div class="team_member_name">
-            <p class="member_name">Devansh Hasija</p>
-            <p class="member_post">UI Designer</p>
-          </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
 
-      <div class="out_more">
-        <div class="more_team flex-center-all">
-          <div class="flex-1 flex-vertical">
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
+      <div id="contact" class="footer">
+        <p class="footer_head">Contact us</p>
+        <p>Want to know more about us? Get in touch with us today!</p>
+
+        <div class="contact_info flex-center-all">
+          <div class="address flex-vertical flex-center-all flex-1">
+            <span class="material-icons">place</span>
+            <p class="contact_title">Address</p>
+            <p class="contact_content">
+              Center for Entrepreneurial Leadership
+            </p>
+            <p class="contact_content">BITS-Pilani K.K Birla Goa
+              Campus Sancoale</p>
+            <p>| GOA</p>
           </div>
-          <div class="flex-1 flex-vertical">
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
+          <div class="phn_num flex-vertical flex-center-all flex-1">
+            <span class="material-icons">call</span>
+            <p class="contact_title">Phone number</p>
+            <p class="contact_content">+91 9340271875</p>
+            <p class="contact_content">+91 8178355371</p>
+            <p class="contact_content">+91 7905115100</p>
           </div>
-          <div class="flex-1 flex-vertical">
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
-            <p class="more_name">Devansh</p>
+          <div class="e_mail flex-vertical flex-center-all flex-1">
+            <span class="material-icons">email</span>
+            <p class="contact_title">Email</p>
+            <p>Mail us at:</p>
+            <p><a href="mailto:team@coalescence.in">team@coalescence.in</a></p>
           </div>
         </div>
-
-      </div>
-      <button class="view_more text-center" onclick="view_more()">VIEW MORE</button>
-    </div>
-
-    <div class="merch">
-      <p class="merch_head">Merchandise</p>
-
-      <p class="">Launching the 2022 edition of Udgam merchandise! <br>
-        We bring to you a selection of products to choose from - Tshirts. Grab your merchandise now!</p>
-
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-            style="width:20%">
-        </div>
-
-        <div class="mySlides fade">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-            style="width:20%">
-        </div>
-
-        <div class="mySlides fade">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ9WCaRNgk94ot5rm4Lo4F9YW5M7Vc7uMWg&usqp=CAU"
-            style="width:20%">
-        </div>
-
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
       </div>
     </div>
-  </div>
-  <script src="assets/js/index.js"></script>
-  <script src="assets/js/scroll.js"></script>
-</body>
-
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/scroll.js"></script>
+  </body>
 </html>
